@@ -1,0 +1,144 @@
+/* ===== Fade Up ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Fade In ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== Wiggle (for CTA attention) ===== */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+}
+
+/* ===== Shimmer (for card backs) ===== */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ===== Shake (for fortune sticks) ===== */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10% { transform: translateX(-6px) rotate(-1deg); }
+  20% { transform: translateX(5px) rotate(0.5deg); }
+  30% { transform: translateX(-4px); }
+  40% { transform: translateX(3px); }
+  50% { transform: translateX(-2px); }
+  60% { transform: translateX(2px); }
+  70% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+}
+
+/* ===== Card flip (for tarot) ===== */
+@keyframes cardFlip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(180deg); }
+}
+
+/* ===== Pop in (for revealed fortune) ===== */
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ===== Glow pulse (for auspicious fortune) ===== */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(125, 155, 118, 0.3); }
+  50% { box-shadow: 0 0 32px rgba(125, 155, 118, 0.5); }
+}
+
+/* ===== Float ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== Typewriter cursor blink ===== */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ===== Dice roll ===== */
+@keyframes diceRoll {
+  0% { transform: rotateZ(0deg) scale(1); }
+  25% { transform: rotateZ(90deg) scale(1.1); }
+  50% { transform: rotateZ(180deg) scale(0.95); }
+  75% { transform: rotateZ(270deg) scale(1.05); }
+  100% { transform: rotateZ(360deg) scale(1); }
+}
+
+/* ===== Cookie crack ===== */
+@keyframes cookieCrack {
+  0% { transform: scale(1) rotate(0deg); }
+  30% { transform: scale(1.05) rotate(2deg); }
+  60% { transform: scale(1.1) rotate(-2deg); }
+  80% { transform: scale(1.15) rotate(1deg); }
+  100% { transform: scale(0.95) rotate(0deg); opacity: 0.7; }
+}
+
+/* ===== Stick rise out ===== */
+@keyframes stickRise {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-80px); opacity: 0.7; }
+}
+
+/* ===== Utilities: animation application ===== */
+.animate-fade-up {
+  animation: fadeUp 0.8s var(--ease-out-expo) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s var(--ease-out-expo) forwards;
+}
+
+.animate-pop-in {
+  animation: popIn 0.5s var(--ease-spring) forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===== Reveal on scroll state ===== */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s var(--ease-out-expo),
+              transform 0.8s var(--ease-out-expo);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
