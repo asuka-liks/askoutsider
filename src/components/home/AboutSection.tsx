@@ -35,10 +35,15 @@ export default function AboutSection() {
               overflow: 'hidden',
             }}
           >
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity={0.4}>
-              <circle cx="40" cy="30" r="14" stroke="var(--color-clay)" strokeWidth="1.5" />
-              <path d="M20 56c0-11 9-20 20-20s20 9 20 20" stroke="var(--color-clay)" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
+            <img
+              src="/avatar.jpg"
+              alt="avatar"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
           </div>
 
           <div>
