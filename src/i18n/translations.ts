@@ -74,8 +74,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     about: {
       title: '关于我',
       paragraphs: [
-        '我是一个相信用心建造的开发者。我的工作位于整洁代码、深思熟虑的设计和人性体验的交汇处。',
-        '不写代码的时候，我会读哲学、在陌生的街道上漫游，或者追逐那些拒绝被忽视的想法。',
+        '计算机科学与技术专业毕业。擅长 C++ 和 Python，在机器学习和 Web 全栈开发方面有一定的项目实践经验。',
+        '喜欢钻研前沿技术，对 AI 驱动的开发范式（Vibe Coding）充满兴趣，乐于探索技术与创造力的交叉点。',
         '这个网站是我在互联网上的一角——一个分享我所建造、所学和所感的地方。',
       ],
     },
@@ -83,20 +83,20 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       title: '我的技能',
       categories: [
         {
-          name: '前端',
-          items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+          name: '编程语言',
+          items: ['C++', 'Python', 'Java', 'TypeScript'],
         },
         {
-          name: '后端',
-          items: ['Node.js', 'Python', 'PostgreSQL', 'Redis', 'GraphQL'],
+          name: 'AI & 数据',
+          items: ['Scikit-learn', 'NumPy', 'Pandas', 'PyTorch'],
+        },
+        {
+          name: 'Web 开发',
+          items: ['Nuxt 3', 'React', 'Spring Boot', 'MySQL'],
         },
         {
           name: '工具',
-          items: ['Git', 'Docker', 'Figma', 'VS Code', 'Linux'],
-        },
-        {
-          name: '设计',
-          items: ['UI/UX', '字体排印', '色彩理论', '动效设计'],
+          items: ['Git', 'Docker', 'Linux', 'VS Code'],
         },
       ],
     },
@@ -158,29 +158,29 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     about: {
       title: 'About Me',
       paragraphs: [
-        "I'm a developer who believes in building things with care and intention. My work sits at the intersection of clean code, thoughtful design, and human experience.",
-        "When I'm not writing code, you'll find me reading philosophy, wandering through unfamiliar streets, or chasing ideas that refuse to be ignored.",
-        "This site is my little corner of the internet — a place to share what I build, what I learn, and what moves me.",
+        'Graduated with a degree in Computer Science. Proficient in C++ and Python, with project experience in machine learning and full-stack web development.',
+        'Passionate about cutting-edge technology and AI-driven development paradigms (Vibe Coding). Always exploring the intersection of technology and creativity.',
+        'This site is my little corner of the internet — a place to share what I build, what I learn, and what moves me.',
       ],
     },
     skills: {
       title: 'What I Work With',
       categories: [
         {
-          name: 'Frontend',
-          items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+          name: 'Languages',
+          items: ['C++', 'Python', 'Java', 'TypeScript'],
         },
         {
-          name: 'Backend',
-          items: ['Node.js', 'Python', 'PostgreSQL', 'Redis', 'GraphQL'],
+          name: 'AI & Data',
+          items: ['Scikit-learn', 'NumPy', 'Pandas', 'PyTorch'],
+        },
+        {
+          name: 'Web Dev',
+          items: ['Nuxt 3', 'React', 'Spring Boot', 'MySQL'],
         },
         {
           name: 'Tools',
-          items: ['Git', 'Docker', 'Figma', 'VS Code', 'Linux'],
-        },
-        {
-          name: 'Design',
-          items: ['UI/UX', 'Typography', 'Color Theory', 'Motion Design'],
+          items: ['Git', 'Docker', 'Linux', 'VS Code'],
         },
       ],
     },
