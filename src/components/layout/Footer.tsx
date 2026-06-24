@@ -83,6 +83,20 @@ export default function Footer() {
         <p style={{ fontSize: 'var(--text-sm)', color: 'var(--color-ink)', opacity: 0.7 }}>
           &copy; {year} {t.site.name}. {t.footer.madeWith}
         </p>
+
+        <a
+          href="https://beian.miit.gov.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            fontSize: 'var(--text-sm)',
+            color: 'var(--color-ink)',
+            opacity: 0.6,
+            textDecoration: 'none',
+          }}
+        >
+          苏ICP备2026041456号-1
+        </a>
       </div>
     </footer>
   );
