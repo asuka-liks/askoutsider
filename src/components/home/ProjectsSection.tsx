@@ -4,20 +4,20 @@ import ProjectCard from '../shared/ProjectCard';
 
 const PROJECT_HREFS: Record<string, string> = {
   'fortune': '/project/fortune',
+  'imitator': '/project/imitator',
   'coming-soon-1': '#',
-  'coming-soon-2': '#',
 };
 
 const PROJECT_COLORS: Record<string, string> = {
   'fortune': '#6B5B7B',
+  'imitator': '#C94A4A',
   'coming-soon-1': '#C4946C',
-  'coming-soon-2': '#7D9B76',
 };
 
 const PROJECT_EMOJIS: Record<string, string> = {
   'fortune': '🔮',
+  'imitator': '🔥',
   'coming-soon-1': '✨',
-  'coming-soon-2': '🌱',
 };
 
 export default function ProjectsSection() {
